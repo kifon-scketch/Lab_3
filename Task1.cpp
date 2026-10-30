@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 
 int main() {
     setlocale(LC_ALL, "Russian");
@@ -20,9 +19,8 @@ int main() {
         sum += t; 
     }
 
-    double average = sum / n;
-    std::cout << std::fixed << std::setprecision(2); 
-    std::cout << "\nСредняя температура за " << n << " дн.: " << average << " °C" << std::endl;
+    double average = sum / n; 
+    std::cout << "Средняя температура за " << n << " дн.: " << average << " °C" << std::endl;
 
     return 0;
 }
